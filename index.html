@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
-    <title>Testando Sheets Post</title>
+    <title>Buscando CEP com Axios</title>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <link href="assets/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-<form action="" method="post">
-
-<input type="text" placeholder="Ensira aqui o seu nome">
-<input type="text" placeholder="Ensira aqui o seu e-mail">
-<button type="submit"> Baixar E-Book </button>
-
-</form>
-    
-    <script src="./index.js"></script>
+    <main class="container">
+        <h1 class="title">Buscando CEP com Axios</h1>
+        <form class="form">
+            <div class="row">
+                <div class="form___group">
+                    <input autofocus autocomplete="off" class="form___data" id="cep" maxlength="8" name="cep" pattern="([\d]{8})" placeholder="Digite o CEP aqui" required type="text">
+                    <span class="form___requirement">* O campo deve ser informado com apenas números.</span>
+                </div>
+            </div>
+            <div class="row has-alignCenter">
+                <button class="form__button" type="submit">Buscar CEP</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
