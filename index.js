@@ -8,13 +8,8 @@ function insertData(e, form){
 
     const inputUseremail = form.useremail
     const useremail = inputUseremail.value
-}
 
-
-// main.js 
-
-// POST request using fetch() 
-fetch(API_URL, { 
+    fetch(API_URL, { 
 	
 	// Adding method type 
 	method: "POST", 
@@ -37,3 +32,11 @@ fetch(API_URL, {
 
 // Displaying results to console 
 .then(json => console.log(json)); 
+
+}
+
+
+// main.js 
+
+// POST request using fetch() 
+
